@@ -10,7 +10,7 @@ if(pokeball=="yes"):
         if(catchrate==4):
             print(""+ pokemon1 + " Broke out")
         else:
-            print("Zubat was caught, Congratulations!")
+            print("Golbat was caught, Congratulations!")
 
 
 
