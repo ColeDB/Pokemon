@@ -4,7 +4,7 @@ import sys
 Computerhp = 25
 
 userhp = 30
-name = input("what is your name")
+name = input("what do you chose")
 
 
 print("Computer = 25hp")
