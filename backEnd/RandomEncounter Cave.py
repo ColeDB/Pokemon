@@ -8,7 +8,7 @@ run = ["run", "Run"]
 print("Duh Duh Duh Duh Duh")
 name=input("What is your Name? ")
 type = input("What is your job?"
-             "Chef, Businessman, Mechanic, ")
+             "Chef, Businessman, Mechanic")
 cave = random.randint(1, 4)
 if (cave == 1):
     pokemon1=("Golbat")
@@ -19,7 +19,7 @@ if (cave == 1):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
-        if type == "bulbasaur" or "Bulbasaur":
+        if type == "Chef" or "chef":
             attack1 = random.randint(6, 10)
         else:
             attack1 = random.randint(1, 6)
