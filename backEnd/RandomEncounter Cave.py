@@ -5,10 +5,25 @@ kick = ["kick", "Kick"]
 punch = ["punch", "Punch"]
 throw = ["throw", "Throw"]
 run = ["run", "Run"]
+badnames = ["Jakob", "Craig", "Jean", "Ezra", "Angus", "Trevor"]
+realjobs = ["chef", "Chef", "businessman", "Businessman", "mechanic", "Mechanic"]
 print("Duh Duh Duh Duh Duh")
 name=input("What is your Name? ")
-type = input("What is your job?"
-             "Chef, Businessman, Mechanic")
+
+if (name in badnames):
+    print("Jesus christ, did your parents just want to doom you from the start?")
+else:
+    print("Nice to meet you " + name + "")
+cont = 0
+while cont == 0:
+    type = input("What is your job? Chef, Businessman, Mechanic")
+    if type in realjobs :
+        cont = 1
+    else:
+        print("That wasn't an option")
+        cont=0
+
+
 cave = random.randint(1, 4)
 if (cave == 1):
     pokemon1=("Golbat")
@@ -30,7 +45,7 @@ if (cave == 1):
             print("It was Super Effective")
         elif (attack1 < 4):
             print("It was not very Effective")
-        do1 = input("What will you do?,Attack or Run?")
+        do1 = input("What will you do? Attack or Run?")
         if (do1 in attack):
             b = input("Punch, Kick, or Throw")
             if (b in punch):
@@ -92,7 +107,7 @@ if (cave == 2):
             print("It was Super Effective")
         elif (attack1 < 4):
             print("It was not very Effective")
-        do1 = input("What will you do?,Attack or Run?")
+        do1 = input("What will you do? Attack or Run?")
         if (do1 in attack):
             b = input("Punch, Kick, or Throw")
             if (b in punch):
@@ -152,7 +167,7 @@ if (cave == 3):
             print("It was Super Effective")
         elif (attack1 < 4):
             print("It was not very Effective")
-        do1 = input("What will you do?,Attack or Run?")
+        do1 = input("What will you do? Attack or Run?")
         if (do1 in attack):
             b = input("Punch, Kick, or Throw")
             if (b in punch):
@@ -209,7 +224,7 @@ if (cave == 4):
             print("It was Super Effective")
         elif (attack1 < 4):
             print("It was not very Effective")
-        do1 = input("What will you do?,Attack or Run?")
+        do1 = input("What will you do? Attack or Run?")
         if (do1 in attack):
             b = input("Punch, Kick, or Throw")
             if (b in punch):
