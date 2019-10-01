@@ -81,7 +81,10 @@ if (cave == 2):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
-        attack1 = random.randint(1, 10)
+        if type == "Mechanic" or "mechanic":
+            attack1 = random.randint(6,10)
+        else:
+            attack1 = random.randint(1, 6)
         userhp = userhp - attack1
         print("" + pokemon1 + " uses Slam!")
         print("" + str(name) + " = " + str(userhp) + "hp")
@@ -138,7 +141,10 @@ if (cave == 3):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
-        attack1 = random.randint(1, 10)
+        if type == "Buisnessman" or "buisnassman":
+            attack1 = random.randint(6,10)
+        else:
+            attack1 = random.randint(1,6)
         userhp = userhp - attack1
         print("" + pokemon1 + " uses Slam!")
         print("" + str(name) + " = " + str(userhp) + "hp")
