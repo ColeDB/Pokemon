@@ -6,7 +6,7 @@ punch = ["punch", "Punch"]
 throw = ["throw", "Throw"]
 run = ["run", "Run"]
 badnames = ["Jakob", "Craig", "Jean", "Ezra", "Angus", "Trevor"]
-realjobs = ["chef", "Chef", "businessman", "Businessman", "mechanic", "Mechanic"]
+realjobs = ["chef", "Chef", "businessman", "Businessman", "mechanic", "Mechanic", "crackhead", "Crackhead"]
 xp = 1
 print("Duh Duh Duh Duh Duh")
 name=input("What is your Name? ")
@@ -35,7 +35,9 @@ if (cave == 1):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
-        if type == "Chef" or "chef":
+        if type == "crackhead" or "Crackhead":
+            attack1 = 10
+        elif type == "Chef" or "chef":
             attack1 = random.randint(6, 10)
         else:
             attack1 = random.randint(1, 6)
@@ -87,7 +89,7 @@ if (cave == 1):
         elif (pokemonhp <= 0):
             print("Great job, "+ pokemon1 +" fainted")
             xp+=75
-            print("xp 0 --> xp" + xp)
+            print("xp 0 --> xp" + str(xp))
 
 
     print("done")
@@ -100,7 +102,9 @@ if (cave == 2):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
-        if type == "Mechanic" or "mechanic":
+        if type == "crackhead" or "Crackhead":
+            attack1 = 10
+        elif type == "Mechanic" or "mechanic":
             attack1 = random.randint(6,10)
         else:
             attack1 = random.randint(1, 6)
@@ -152,7 +156,7 @@ if (cave == 2):
         elif (pokemonhp <= 0):
             print("Great job, " + pokemon1 + " fainted")
             xp+=75
-            print("xp 0 --> xp" + xp)
+            print("xp 0 --> xp" + str(xp))
 
 if (cave == 3):
     pokemon1 = ("Ekans")
@@ -163,7 +167,9 @@ if (cave == 3):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
-        if type == "Buisnessman" or "buisnassman":
+        if type == "crackhead" or "Crackhead":
+            attack1 = 10
+        elif type == "Buisnessman" or "buisnassman":
             attack1 = random.randint(6,10)
         else:
             attack1 = random.randint(1,6)
@@ -214,6 +220,10 @@ if (cave == 3):
             print("Lmao, you died")
         elif (pokemonhp <= 0):
             print("Great job, " + pokemon1 + " fainted")
+            xp += 75
+            print("xp 0 --> xp" + str(xp))
+
+
 if (cave == 4):
     pokemon1 = ("Sableye")
     print("A wild " + pokemon1 + " Appears")
@@ -223,7 +233,10 @@ if (cave == 4):
     print("" + name + " = 30hp")
 
     while userhp >= 1 and pokemonhp >= 1:
+
         attack1 = random.randint(1, 10)
+        if type == "crackhead" or "Crackhead":
+            attack1 = 10
         userhp = userhp - attack1
         print("" + pokemon1 + " uses Slam!")
         print("" + str(name) + " = " + str(userhp) + "hp")
@@ -272,4 +285,4 @@ if (cave == 4):
         elif (pokemonhp <= 0):
             print("Great job, " + pokemon1 + " fainted")
             xp += 75
-            print("xp 0 --> xp" + xp)
+            print("xp 0 --> xp" + str(xp))
