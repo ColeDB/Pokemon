@@ -7,6 +7,7 @@ throw = ["throw", "Throw"]
 run = ["run", "Run"]
 badnames = ["Jakob", "Craig", "Jean", "Ezra", "Angus", "Trevor"]
 realjobs = ["chef", "Chef", "businessman", "Businessman", "mechanic", "Mechanic"]
+xp = 1
 print("Duh Duh Duh Duh Duh")
 name=input("What is your Name? ")
 
@@ -23,7 +24,7 @@ while cont == 0:
         print("That wasn't an option")
         cont=0
 
-
+print("You wander into a small cave and notice a figure!")
 cave = random.randint(1, 4)
 if (cave == 1):
     pokemon1=("Golbat")
@@ -85,6 +86,9 @@ if (cave == 1):
             print("Lmao, you died")
         elif (pokemonhp <= 0):
             print("Great job, "+ pokemon1 +" fainted")
+            xp+=75
+            print("xp 0 --> xp" + xp)
+
 
     print("done")
 if (cave == 2):
@@ -147,6 +151,9 @@ if (cave == 2):
             print("Lmao, you died")
         elif (pokemonhp <= 0):
             print("Great job, " + pokemon1 + " fainted")
+            xp+=75
+            print("xp 0 --> xp" + xp)
+
 if (cave == 3):
     pokemon1 = ("Ekans")
     print("A wild " + pokemon1 + " Appears")
@@ -264,3 +271,5 @@ if (cave == 4):
             print("Lmao, you died")
         elif (pokemonhp <= 0):
             print("Great job, " + pokemon1 + " fainted")
+            xp += 75
+            print("xp 0 --> xp" + xp)
