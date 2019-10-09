@@ -286,3 +286,63 @@ if (cave == 4):
             print("Great job, " + pokemon1 + " fainted")
             xp += 75
             print("xp 0 --> xp" + str(xp))
+print("Having defeated the pokemon guarding the entrance of the cave, you decide to venture inside")
+direction = input("Which way do you go? Forwards, Left, or Right")
+if direction.lower() == "left":
+    print("You walk straight into a man in a preist's outfit. He promptly attempts to baptise you")
+    userhp = 25
+    pokemonhp = 20
+    while userhp >= 1 and pokemonhp >= 1:
+        pokemon1 = "Not So Kind Old Man"
+        attack1 = random.randint(1, 10)
+        if type == "crackhead" or "Crackhead":
+            attack1 = 10
+        userhp = userhp - attack1
+        print("" + pokemon1 + " uses Slam!")
+        print("" + str(name) + " = " + str(userhp) + "hp")
+        if (attack1 > 6):
+            print("It was Super Effective")
+        elif (attack1 < 4):
+            print("It was not very Effective")
+        do1 = input("What will you do? Attack or Run?")
+        if (do1 in attack):
+            b = input("Punch, Kick, or Throw")
+            if (b in punch):
+                print("You punch the " + pokemon1 + "")
+                punch2 = random.randint(1, 15)
+                pokemonhp = pokemonhp - punch2
+                print("" + str(pokemon1) + " = " + str(pokemonhp) + "hp")
+                if (punch2 > 6):
+                    print("You punch " + pokemon1 + "")
+                    print("It was Super Effective!")
+                if (punch2 < 4):
+                    print("It was not that Effective")
+            elif (b in kick):
+                print("You Kick " + pokemon1 + "")
+                kick2 = random.randint(5, 10)
+                pokemonhp = pokemonhp - kick2
+                print("" + str(pokemon1) + " = " + str(pokemonhp) + "hp")
+                if (kick2 > 8):
+                    print("You kick at the " + pokemon1 + "")
+                    print("It was Super Effective!")
+                if (kick2 < 6):
+                    print("It was not that Effective")
+            elif (b in throw):
+                print("You shove the " + pokemon1 + "")
+                throw2 = random.randint(3, 12)
+                pokemonhp = pokemonhp - throw2
+                print("" + str(pokemon1) + " = " + str(pokemonhp) + "hp")
+                if (throw2 > 6):
+                    print("You shove it hard!")
+                    print("It was Super Effective!")
+                if (throw2 < 4):
+                    print("It was not that Effective")
+        if (do1 in run):
+            print("You run away. Pussy")
+            sys.exit()
+        if (userhp <= 0):
+            print("Lmao, you died and you corpse was molested")
+        elif (pokemonhp <= 0):
+            print("Great job, " + pokemon1 + " fainted, and you are able to rescue the children within his abode, along with a quart of holy water. This may come in useful, so you decide to keep it")
+            xp += 200
+            print("xp 0 --> xp" + str(xp))
