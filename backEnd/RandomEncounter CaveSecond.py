@@ -351,4 +351,5 @@ if direction.lower() == "left":
             print("After a long and arduous chase, you finally escape his assasins, only to come face to face with the man himself.")
             print()
             print("He pulls out a silenced pistol and starts firing. Thankfully, in true movie fashion, the first three shots go into the ground where you are standing")
-            
+            print()
+            print("As you cower in fear behind a nearby rock he suddenly has a stroke, colapsing on the ground. you approach, picking up his gun, and promptly flee to venezuela, where you live out the rest of your life")
