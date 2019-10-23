@@ -341,8 +341,14 @@ if direction.lower() == "left":
             print("You run away. Pussy")
             sys.exit()
         if (userhp <= 0):
-            print("Lmao, you died and you corpse was molested")
+            print("Lmao, you died and you corpse was never found.")
         elif (pokemonhp <= 0):
             print("Great job, " + pokemon1 + " fainted, and you are able to rescue the children within his abode, along with a quart of holy water. This may come in useful, so you decide to keep it")
             xp += 200
             print("xp 0 --> xp" + str(xp))
+            print("After defeating the old man, you discover that he was Sean Connery's half brother. A bounty is placed onto your head as you are forced to flee. ")
+            print()
+            print("After a long and arduous chase, you finally escape his assasins, only to come face to face with the man himself.")
+            print()
+            print("He pulls out a silenced pistol and starts firing. Thankfully, in true movie fashion, the first three shots go into the ground where you are standing")
+            
