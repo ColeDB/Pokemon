@@ -12,7 +12,7 @@
     <session id="2042183787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backEnd/RandomEncounter CaveSecond.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="354" column="218" selection-start-line="354" selection-start-column="218" selection-end-line="354" selection-end-column="218" />
+            <state relative-caret-position="679">
+              <caret line="354" column="219" selection-start-line="354" selection-start-column="219" selection-end-line="354" selection-end-column="219" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -252,8 +252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backEnd/RandomEncounter CaveSecond.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="354" column="218" selection-start-line="354" selection-start-column="218" selection-end-line="354" selection-end-column="218" />
+        <state relative-caret-position="679">
+          <caret line="354" column="219" selection-start-line="354" selection-start-column="219" selection-end-line="354" selection-end-column="219" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
